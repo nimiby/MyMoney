@@ -57,8 +57,21 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bower.json" />
+    <Content Include="3rd party components\angular-animate\angular-animate.js" />
+    <Content Include="3rd party components\angular-mocks\angular-mocks.js" />
+    <Content Include="3rd party components\angular-resource\angular-resource.js" />
+    <Content Include="3rd party components\angular-route\angular-route.js" />
+    <Content Include="3rd party components\angular\angular.js" />
+    <Content Include="3rd party components\bootstrap\bootstrap.css" />
+    <Content Include="3rd party components\bootstrap\bootstrap.js" />
+    <Content Include="3rd party components\bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="3rd party components\jquery\jquery.js" />
     <Content Include="package.json" />
+    <Content Include="3rd party components\bootstrap\glyphicons-halflings-regular.eot" />
+    <Content Include="3rd party components\bootstrap\glyphicons-halflings-regular.ttf" />
+    <Content Include="3rd party components\bootstrap\glyphicons-halflings-regular.woff" />
+    <Content Include="3rd party components\bower.json" />
+    <Content Include="bower.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

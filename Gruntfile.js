@@ -5,7 +5,12 @@ module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         bower: {
-            install: { }
+            install: {
+                options: {
+                    targetDir: "3rd party components",
+                    cleanBowerDir: true
+                }
+            }
         }
     });
 
