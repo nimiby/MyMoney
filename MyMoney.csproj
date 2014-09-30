@@ -38,7 +38,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ServiceModel.Web" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -49,7 +49,6 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
@@ -57,21 +56,68 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="3rd party components\angular-animate\angular-animate.js" />
-    <Content Include="3rd party components\angular-mocks\angular-mocks.js" />
-    <Content Include="3rd party components\angular-resource\angular-resource.js" />
-    <Content Include="3rd party components\angular-route\angular-route.js" />
-    <Content Include="3rd party components\angular\angular.js" />
-    <Content Include="3rd party components\bootstrap\bootstrap.css" />
-    <Content Include="3rd party components\bootstrap\bootstrap.js" />
-    <Content Include="3rd party components\bootstrap\glyphicons-halflings-regular.svg" />
-    <Content Include="3rd party components\jquery\jquery.js" />
+    <Content Include="WebClient\3rdPartyComponents\angular-animate\angular-animate.js" />
+    <Content Include="WebClient\3rdPartyComponents\angular-mocks\angular-mocks.js" />
+    <Content Include="WebClient\3rdPartyComponents\angular-resource\angular-resource.js" />
+    <Content Include="WebClient\3rdPartyComponents\angular-route\angular-route.js" />
+    <Content Include="WebClient\3rdPartyComponents\angular\angular-csp.css" />
+    <Content Include="WebClient\3rdPartyComponents\angular\angular.js" />
+    <Content Include="WebClient\3rdPartyComponents\angular\angular.min.js" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\js\bootstrap.js" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\js\bootstrap.min.js" />
+    <Content Include="WebClient\3rdPartyComponents\jquery\jquery.js" />
     <Content Include="package.json" />
-    <Content Include="3rd party components\bootstrap\glyphicons-halflings-regular.eot" />
-    <Content Include="3rd party components\bootstrap\glyphicons-halflings-regular.ttf" />
-    <Content Include="3rd party components\bootstrap\glyphicons-halflings-regular.woff" />
-    <Content Include="3rd party components\bower.json" />
     <Content Include="bower.json" />
+    <Content Include="WebClient\3rdPartyComponents\angular\angular.min.js.gzip" />
+    <Content Include="WebClient\3rdPartyComponents\angular\angular.min.js.map" />
+    <Content Include="WebClient\3rdPartyComponents\angular\bower.json" />
+    <Content Include="WebClient\3rdPartyComponents\angular\README.md" />
+    <Content Include="WebClient\App\MainApp.js" />
+    <Content Include="WebClient\App\_intellisense.js" />
+    <Content Include="WebClient\Main.html" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\alerts.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\badges.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\bootstrap.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\breadcrumbs.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\button-groups.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\buttons.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\carousel.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\close.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\code.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\component-animations.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\dropdowns.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\forms.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\glyphicons.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\grid.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\input-groups.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\jumbotron.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\labels.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\list-group.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\media.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\modals.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\navbar.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\navs.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\normalize.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\pager.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\pagination.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\panels.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\popovers.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\print.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\progress-bars.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\responsive-utilities.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\scaffolding.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\tables.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\theme.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\thumbnails.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\tooltip.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\type.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\utilities.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\variables.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\wells.less" />
+    <Content Include="WebClient\Styles\Styles.css" />
+    <None Include="WebClient\Styles\variables.less" />
+    <None Include="WebClient\Styles\Styles.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -85,6 +131,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WebClient\Assets\" />
+    <Folder Include="WebClient\Views\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

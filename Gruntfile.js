@@ -1,4 +1,4 @@
-﻿/// <vs AfterBuild='dummyTask' />
+﻿/// <vs BeforeBuild='build' />
 module.exports = function (grunt) {
 
     // Project configuration.
@@ -7,8 +7,16 @@ module.exports = function (grunt) {
         bower: {
             install: {
                 options: {
-                    targetDir: "3rd party components",
-                    cleanBowerDir: true
+                    targetDir: "WebClient\\3rdPartyComponents",
+                    cleanBowerDir: true,
+                    layout: "byComponent"
+                }
+            }
+        },
+        less: {
+            build: {
+                files: {
+                    "WebClient/Styles/Styles.css": "WebClient/Styles/Styles.less"
                 }
             }
         }
@@ -16,5 +24,7 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-bower-task');
 
-    grunt.registerTask('build', ['bower']);
+    grunt.loadNpmTasks('grunt-contrib-less');
+
+    grunt.registerTask('build', ['bower', 'less']);
 }
