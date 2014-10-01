@@ -2,28 +2,43 @@
 <html ng-app="MyMoneyApp" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>My Money</title>
-    <script src="/WebClient/3rdPartyComponents/angular/angular.min.js"></script>
+
+    <!--<link href="/WebClient/Styles/Styles.css" rel="stylesheet" />-->
+    <link href="/WebClient/Styles/Styles.less" rel="stylesheet/less" type="text/css" />
+
+
+    <script src="/WebClient/3rdPartyComponents/angular/angular.js"></script>
     <script src="/WebClient/3rdPartyComponents/angular-route/angular-route.js"></script>
     <script src="/WebClient/App/MainApp.js"></script>
-    <link href="/WebClient/3rdPartyComponents/bootstrap/bootstrap.css" rel="stylesheet" />
     <script src="/WebClient/3rdPartyComponents/jquery/jquery.js"></script>
-    <script src="/WebClient/3rdPartyComponents/bootstrap/bootstrap.js"></script>
-    <link href="/WebClient/Assets/app.css" rel="stylesheet" />
+    <script src="/WebClient/3rdPartyComponents/less/less-1.7.5.js"></script>
+    <script src="/WebClient/3rdPartyComponents/bootstrap/js/bootstrap.js"></script>
 
+    
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <div id="mainContainer" class="container test">
-        <div id="top" class="row test">
-            <div class="col-lg-1 test">
-                <p>top row</p>
+    <header>
+        <h1>header</h1>
+    </header>
+    <nav class="nav">
+        <h1>nav</h1>
+    </nav>
+    <div id="mainContainer" class="container">
+        <div id="top" class="row">
+            <div class="col-lg-12">
+                <h1>top row</h1>
             </div>
         </div>
-        <div id="top" class="row test">
-            <div class="col-lg-1 test">
-                <p>main area</p>
+        <div id="top" class="row">
+            <div class="col-lg-12">
+                <h2>main area</h2>
             </div>
         </div>
     </div>
+    <footer>
+        <h2>footer</h2>
+    </footer>
 </body>
 </html>

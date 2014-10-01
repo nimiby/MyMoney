@@ -65,6 +65,8 @@
     <Content Include="WebClient\3rdPartyComponents\angular\angular.min.js" />
     <Content Include="WebClient\3rdPartyComponents\bootstrap\js\bootstrap.js" />
     <Content Include="WebClient\3rdPartyComponents\bootstrap\js\bootstrap.min.js" />
+    <Content Include="WebClient\3rdPartyComponents\font-awesome\font-awesome.css" />
+    <Content Include="WebClient\3rdPartyComponents\font-awesome\fontawesome-webfont.svg" />
     <Content Include="WebClient\3rdPartyComponents\jquery\jquery.js" />
     <Content Include="package.json" />
     <Content Include="bower.json" />
@@ -72,6 +74,7 @@
     <Content Include="WebClient\3rdPartyComponents\angular\angular.min.js.map" />
     <Content Include="WebClient\3rdPartyComponents\angular\bower.json" />
     <Content Include="WebClient\3rdPartyComponents\angular\README.md" />
+    <Content Include="WebClient\3rdPartyComponents\less\less-1.7.5.js" />
     <Content Include="WebClient\App\MainApp.js" />
     <Content Include="WebClient\App\_intellisense.js" />
     <Content Include="WebClient\Main.html" />
@@ -116,6 +119,10 @@
     <Content Include="WebClient\3rdPartyComponents\bootstrap\less\variables.less" />
     <Content Include="WebClient\3rdPartyComponents\bootstrap\less\wells.less" />
     <Content Include="WebClient\Styles\Styles.css" />
+    <Content Include="WebClient\3rdPartyComponents\font-awesome\fontawesome-webfont.eot" />
+    <Content Include="WebClient\3rdPartyComponents\font-awesome\fontawesome-webfont.ttf" />
+    <Content Include="WebClient\3rdPartyComponents\font-awesome\fontawesome-webfont.woff" />
+    <Content Include="WebClient\3rdPartyComponents\font-awesome\FontAwesome.otf" />
     <None Include="WebClient\Styles\variables.less" />
     <None Include="WebClient\Styles\Styles.less" />
     <None Include="Web.Debug.config">
