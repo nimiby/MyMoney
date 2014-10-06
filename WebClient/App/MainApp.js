@@ -1,6 +1,19 @@
-﻿/// <Reference path="../3rdPartyComponents/angular/angular.js">
-/// <Reference path="_intellisense.js">
+﻿"use strict";
 
-"use strict";
+var app = angular.module("MyMoneyApp", ['ngRoute', 'Expense', 'Balance', 'mgcrea.ngStrap']);
 
-var app = angular.module("MyMoneyApp", []);
+app.config(function ($routeProvider) {
+    $routeProvider.when('/expense', {
+        templateUrl: '/WebClient/App/Expense/Expense.html',
+        controller: 'ExpenseController'
+    }).when('/balance', {
+        templateUrl: '/WebClient/App/Balance/Balance.html',
+        controller: 'BalanceController'
+    }).otherwise({
+        redirectTo: 'expense'
+    });
+});
+
+app.controller('MainPageController', function ($scope) {
+
+});

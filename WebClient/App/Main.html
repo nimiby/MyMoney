@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html ng-app="MyMoneyApp" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>My Money</title>
+
+    <link href="/WebClient/Styles/Styles.css" rel="stylesheet" />
+    <link href="/WebClient/3rdPartyComponents/metisMenu/metisMenu.css" rel="stylesheet" />
+
+    <!--<link href="/WebClient/Styles/sb-admin-2.css" rel="stylesheet" />-->
+
+    <script src="/WebClient/3rdPartyComponents/angular/angular.js"></script>
+    <script src="/WebClient/3rdPartyComponents/angular-route/angular-route.js"></script>
+    <script src="/WebClient/3rdPartyComponents/jquery/jquery.js"></script>
+    <script src="/WebClient/3rdPartyComponents/bootstrap/js/bootstrap.js"></script>
+    <script src="/WebClient/3rdPartyComponents/metisMenu/metisMenu.js"></script>
+    <script src="/WebClient/App/MainApp.js"></script>
+    <script src="/WebClient/App/Expense/Expense.js"></script>
+    <script src="/WebClient/App/Balance/Balance.js"></script>
+    <script src="/WebClient//3rdPartyComponents/angular-strap/angular-strap.js"></script>
+    <script src="/WebClient/3rdPartyComponents/angular-strap/angular-strap.tpl.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body ng-controller="MainPageController">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation" bs-navbar>
+        <div class="container">
+            <div class="navbar-header">
+                <div class="navbar-brand">My Money</div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-items">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="menu-items">
+                <ul class="nav navbar-nav">
+                    <li data-match-route="/expense">
+                        <a href="#/expense">
+                            <i class="fa fa-area-chart"></i>
+                            My Expense
+                        </a>
+                    </li>
+                    <li data-match-route="/balance">
+                        <a href="#/balance">
+                            <i class="fa fa-line-chart"></i>
+                            My Balance
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-credit-card"></i>
+                            My Transactions
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div ng-view class="container" id="main-workspace"></div>
+</body>
+</html>

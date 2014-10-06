@@ -1,6 +1,11 @@
-﻿(function () {
+﻿intellisense.logMessage('Extending Angular Intellisense');
 
-    if (!angular) return;
+(function () {
+
+    if (!angular) {
+        intellisense.logMessage('Angular context not found!');
+        return;
+    }
 
     //#region Logging Functions
     function indent(level) {
@@ -144,6 +149,8 @@
             moduleName = module.name;
         }
 
+        intellisense.logMessage('Tracking angular module: ' + moduleName);
+
         if (moduleNames.indexOf(moduleName) == -1) {
             // Recursively process dependent modules.
             forEach(module.requires, trackModule);
@@ -161,6 +168,8 @@
 
         // Initialize each component with empty object dependencies. 
         forEach(moduleProviderFunctions, function (providerFunction) {
+
+            intellisense.logMessage('   Tracking provider function: ' + providerFunction);
 
             // Decorate the component type function to call component functions with empty object parameters.
             var originalProviderFunction = module[providerFunction];
@@ -183,9 +192,13 @@
     function trackComponent(component) {
         var type = component[1];
 
+        intellisense.logMessage('Tracking component: ' + component);
+
         // Only track the component if it is of a known type.
         if (componentTypesToTrack.indexOf(type) !== -1) {
             var name = component[2][0];
+
+            
 
             // Record the component itself.
             components[name] = component;

@@ -8,7 +8,7 @@ module.exports = function (grunt) {
             install: {
                 options: {
                     targetDir: "WebClient\\3rdPartyComponents",
-                    cleanBowerDir: true,
+                    cleanBowerDir: false,
                     layout: "byComponent"
                 }
             }

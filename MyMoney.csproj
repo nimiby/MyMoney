@@ -56,6 +56,43 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="WebClient\3rdPartyComponents\angular-strap\angular-strap.js" />
+    <Content Include="WebClient\3rdPartyComponents\angular-strap\angular-strap.tpl.js" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\responsive-embed.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\alerts.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\background-variant.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\border-radius.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\buttons.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\center-block.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\clearfix.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\forms.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\gradients.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\grid-framework.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\grid.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\hide-text.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\image.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\labels.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\list-group.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\nav-divider.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\nav-vertical-align.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\opacity.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\pagination.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\panels.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\progress-bar.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\reset-filter.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\resize.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\responsive-visibility.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\size.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\tab-focus.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\table-row.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\text-emphasis.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\text-overflow.less" />
+    <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\vendor-prefixes.less" />
+    <None Include="WebClient\Styles\app.less" />
+    <Content Include="WebClient\App\Balance\Balance.js" />
+    <Content Include="WebClient\App\Balance\Balance.html" />
+    <Content Include="WebClient\App\Expense\Expense.html" />
+    <None Include="Scripts\_references.js" />
     <Content Include="WebClient\3rdPartyComponents\angular-animate\angular-animate.js" />
     <Content Include="WebClient\3rdPartyComponents\angular-mocks\angular-mocks.js" />
     <Content Include="WebClient\3rdPartyComponents\angular-resource\angular-resource.js" />
@@ -75,9 +112,10 @@
     <Content Include="WebClient\3rdPartyComponents\angular\bower.json" />
     <Content Include="WebClient\3rdPartyComponents\angular\README.md" />
     <Content Include="WebClient\3rdPartyComponents\less\less-1.7.5.js" />
+    <Content Include="WebClient\App\Expense\Expense.js" />
     <Content Include="WebClient\App\MainApp.js" />
-    <Content Include="WebClient\App\_intellisense.js" />
-    <Content Include="WebClient\Main.html" />
+    <Content Include="Scripts\_intellisense.js" />
+    <Content Include="WebClient\App\Main.html" />
     <Content Include="WebClient\3rdPartyComponents\bootstrap\less\alerts.less" />
     <Content Include="WebClient\3rdPartyComponents\bootstrap\less\badges.less" />
     <Content Include="WebClient\3rdPartyComponents\bootstrap\less\bootstrap.less" />
@@ -141,7 +179,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="WebClient\Assets\" />
-    <Folder Include="WebClient\Views\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
