@@ -17,6 +17,12 @@
                     "WebClient/Styles/Styles.css": "WebClient/Styles/Styles.less"
                 }
             }
+        },
+
+        karma: {
+            unit: {
+                configFile: './karma.conf.js'
+            }
         }
     });
 
@@ -24,5 +30,11 @@
 
     grunt.loadNpmTasks('grunt-contrib-less');
 
-    grunt.registerTask('build', ['bower', 'less']);
+    grunt.loadNpmTasks('grunt-karma')
+
+    grunt.registerTask('install', ['bower', 'less']);
+
+    grunt.registerTask('build', ['less']);
+
+    grunt.registerTask('test', ['karma:unit']);
 }

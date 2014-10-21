@@ -1,4 +1,4 @@
-﻿intellisense.logMessage('Extending Angular Intellisense');
+﻿//intellisense.logMessage('Extending Angular Intellisense');
 
 (function () {
 
@@ -149,7 +149,7 @@
             moduleName = module.name;
         }
 
-        intellisense.logMessage('Tracking angular module: ' + moduleName);
+        //intellisense.logMessage('Tracking angular module: ' + moduleName);
 
         if (moduleNames.indexOf(moduleName) == -1) {
             // Recursively process dependent modules.
@@ -169,7 +169,7 @@
         // Initialize each component with empty object dependencies. 
         forEach(moduleProviderFunctions, function (providerFunction) {
 
-            intellisense.logMessage('   Tracking provider function: ' + providerFunction);
+            //intellisense.logMessage('   Tracking provider function: ' + providerFunction);
 
             // Decorate the component type function to call component functions with empty object parameters.
             var originalProviderFunction = module[providerFunction];
@@ -192,7 +192,7 @@
     function trackComponent(component) {
         var type = component[1];
 
-        intellisense.logMessage('Tracking component: ' + component);
+        //intellisense.logMessage('Tracking component: ' + component);
 
         // Only track the component if it is of a known type.
         if (componentTypesToTrack.indexOf(type) !== -1) {
@@ -317,7 +317,7 @@
 
     //#region Jasmine Intellisense
 
-    if (window.jasmine) {
+    if (true) {
         // Create an array of functions to override.
         var overrides = [
             'describe', 'xdescribe',
