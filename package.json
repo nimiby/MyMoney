@@ -1,17 +1,22 @@
 ﻿{
+    "private": true,
     "name": "my-money",
     "version": "0.1.0",
     "devDependencies": {
+        "matchdep":  "~0.3.0",
         "grunt": "~0.4.5",
+        "grunt-shell": "~1.1.1",
         "grunt-bower-task": "~0.4.0",
         "grunt-contrib-less": "~0.11.4",
         "grunt-karma": "~0.9.0",
+        "grunt-nunit-runner": "~2.0.2",
         "karma": "~0.12.24",
         "karma-jasmine": "~0.1.5",
         "karma-chrome-launcher": "~0.1.5",
         "karma-ie-launcher": "~0.1.5",
         "karma-phantomjs-launcher": "~0.1.4",
-        "karma-xml-reporter": "~0.1.4"
+        "karma-junit-reporter": "~0.2.2",
+        "karma-vs-reporter": "~0.5.5"
     },
     "scripts": { 
         "postinstall": "grunt install"

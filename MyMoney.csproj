@@ -40,6 +40,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="nunit.framework">
+      <HintPath>packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="System.ServiceModel.Web" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -59,6 +62,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="karma.conf.js" />
+    <Content Include="Tests\E2ETests\MainFlows.js" />
+    <Content Include="Tests\WebClientUnitTests\Expense.test.js" />
     <Content Include="Tests\WebClientUnitTests\MainApp.test.js" />
     <Content Include="WebClient\3rdPartyComponents\angular-mocks\angular-mocks.js" />
     <Content Include="WebClient\3rdPartyComponents\angular-strap\angular-strap.js" />
@@ -116,6 +121,9 @@
       <DependentUpon>Styles.css</DependentUpon>
     </Content>
     <Content Include="Tests\WebClientUnitTests\Balance.test.js" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="WebClient\Styles\app.less" />
     <Content Include="WebClient\3rdPartyComponents\font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="WebClient\App\Balance\Balance.js" />
@@ -201,10 +209,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\BackendUnitTests\Test.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ServiceAPI\" />
-    <Folder Include="Tests\E2ETests\" />
+    <Folder Include="BackendAPI\" />
     <Folder Include="WebClient\Assets\" />
   </ItemGroup>
   <ItemGroup>

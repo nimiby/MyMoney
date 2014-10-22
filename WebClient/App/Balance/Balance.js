@@ -1,7 +1,7 @@
 ﻿'use strict';
 
-var expenseModule = angular.module('Balance', []);
+var balanceModule = angular.module('Balance', []);
 
-expenseModule.controller('BalanceController', function ($scope) {
+balanceModule.controller('BalanceController', function ($scope) {
     $scope.header = 'My Balance Report';
 });

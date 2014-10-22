@@ -1,7 +1,32 @@
 ﻿module.exports = function (grunt) {
 
+    require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks)
+
     // Project configuration.
     grunt.initConfig({
+        shell: {
+            options: {
+                stdout: true
+            }
+        },
+        nunit: {
+            test:{
+                // Can be solutions, projects or individual assemblies. Solutions 
+                // are searched for projects referencing nunit.framework.dll.
+                files:{ 
+                    src:['MyMoney.csproj']
+                }
+            },
+            options: {
+                path: 'packages/NUnit.Runners.2.6.3/tools',
+                result: 'NUnit_TestResult.xml',
+                work: 'TestResults',
+                labels: true,
+                process: 'Separate', //'Single|Separate|Multiple',
+                timeout: 1000,
+                cleanup: false
+            }
+        },
         bower: {
             install: {
                 options: {
@@ -21,20 +46,15 @@
 
         karma: {
             unit: {
-                configFile: './karma.conf.js'
+                configFile: './karma.conf.js',
+                singleRun: true
             }
         }
     });
-
-    grunt.loadNpmTasks('grunt-bower-task');
-
-    grunt.loadNpmTasks('grunt-contrib-less');
-
-    grunt.loadNpmTasks('grunt-karma')
 
     grunt.registerTask('install', ['bower', 'less']);
 
     grunt.registerTask('build', ['less']);
 
-    grunt.registerTask('test', ['karma:unit']);
+    grunt.registerTask('test', ['karma:unit', 'nunit:test']);
 }
