@@ -42,6 +42,7 @@
   <ItemGroup>
     <Reference Include="nunit.framework">
       <HintPath>packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System.ServiceModel.Web" />
     <Reference Include="System.Web.DynamicData" />
@@ -61,10 +62,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="karma.conf.js" />
-    <Content Include="Tests\E2ETests\MainFlows.js" />
-    <Content Include="Tests\WebClientUnitTests\Expense.test.js" />
-    <Content Include="Tests\WebClientUnitTests\MainApp.test.js" />
+    <None Include="karma.conf.js" />
+    <None Include="Tests\E2ETests\MainFlows.js" />
+    <None Include="Tests\WebClientUnitTests\Expense.test.js" />
+    <None Include="Tests\WebClientUnitTests\MainApp.test.js" />
     <Content Include="WebClient\3rdPartyComponents\angular-mocks\angular-mocks.js" />
     <Content Include="WebClient\3rdPartyComponents\angular-strap\angular-strap.js" />
     <Content Include="WebClient\3rdPartyComponents\angular-strap\angular-strap.tpl.js" />
@@ -98,7 +99,7 @@
     <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\text-emphasis.less" />
     <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\text-overflow.less" />
     <Content Include="WebClient\3rdPartyComponents\bootstrap\less\mixins\vendor-prefixes.less" />
-    <Content Include="Readme.md" />
+    <None Include="Readme.md" />
     <Content Include="WebClient\3rdPartyComponents\font-awesome\fonts\fontawesome-webfont.eot" />
     <Content Include="WebClient\3rdPartyComponents\font-awesome\fonts\fontawesome-webfont.ttf" />
     <Content Include="WebClient\3rdPartyComponents\font-awesome\fonts\fontawesome-webfont.woff" />
@@ -117,13 +118,11 @@
     <Content Include="WebClient\3rdPartyComponents\font-awesome\less\spinning.less" />
     <Content Include="WebClient\3rdPartyComponents\font-awesome\less\stacked.less" />
     <Content Include="WebClient\3rdPartyComponents\font-awesome\less\variables.less" />
-    <Content Include="WebClient\Styles\Styles.min.css">
-      <DependentUpon>Styles.css</DependentUpon>
-    </Content>
-    <Content Include="Tests\WebClientUnitTests\Balance.test.js" />
-    <Content Include="packages.config">
+    <None Include="Tests\WebClientUnitTests\Balance.test.js" />
+    <None Include="packages.config">
       <SubType>Designer</SubType>
-    </Content>
+    </None>
+    <None Include="Properties\PublishProfiles\MyMoneyApp.pubxml" />
     <None Include="WebClient\Styles\app.less" />
     <Content Include="WebClient\3rdPartyComponents\font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="WebClient\App\Balance\Balance.js" />
@@ -139,8 +138,8 @@
     <Content Include="WebClient\3rdPartyComponents\bootstrap\js\bootstrap.js" />
     <Content Include="WebClient\3rdPartyComponents\bootstrap\js\bootstrap.min.js" />
     <Content Include="WebClient\3rdPartyComponents\jquery\jquery.js" />
-    <Content Include="package.json" />
-    <Content Include="bower.json" />
+    <None Include="package.json" />
+    <None Include="bower.json" />
     <Content Include="WebClient\3rdPartyComponents\angular\angular.min.js.gzip" />
     <Content Include="WebClient\3rdPartyComponents\angular\angular.min.js.map" />
     <Content Include="WebClient\3rdPartyComponents\angular\bower.json" />
@@ -148,7 +147,7 @@
     <Content Include="WebClient\3rdPartyComponents\less\less-1.7.5.js" />
     <Content Include="WebClient\App\Expense\Expense.js" />
     <Content Include="WebClient\App\MainApp.js" />
-    <Content Include="Scripts\_angular-intellisense.js" />
+    <None Include="Scripts\_angular-intellisense.js" />
     <Content Include="WebClient\App\Main.html" />
     <Content Include="WebClient\3rdPartyComponents\bootstrap\less\alerts.less" />
     <Content Include="WebClient\3rdPartyComponents\bootstrap\less\badges.less" />
@@ -191,9 +190,6 @@
     <Content Include="WebClient\3rdPartyComponents\bootstrap\less\variables.less" />
     <Content Include="WebClient\3rdPartyComponents\bootstrap\less\wells.less" />
     <Content Include="WebClient\Styles\Styles.css" />
-    <Content Include="WebClient\Styles\Styles.css.map">
-      <DependentUpon>Styles.css</DependentUpon>
-    </Content>
     <None Include="WebClient\Styles\variables.less" />
     <None Include="WebClient\Styles\Styles.less" />
     <None Include="Web.Debug.config">
@@ -204,7 +200,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Gruntfile.js" />
+    <None Include="Gruntfile.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
